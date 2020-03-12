@@ -150,6 +150,19 @@
                         city: '',
                         zipcode: ''
                     }
+                },
+                url: {
+                    base: 'https://api.cittamobi.com.br/m3p/js/',
+                    busStop: 'prediction/stop/',
+                    line: 'vehicles/service/'
+                },
+                code: {
+                    line: {
+                        '270': {'C': '8508022', 'B': '8508023'}
+                    },
+                    busStop: {
+                        'PUCRS Bento C': '5056725'
+                    }
                 }
             };
         },
@@ -204,8 +217,7 @@
         },
         mounted() {
             axios.all([
-                axios.get('https://jsonplaceholder.typicode.com/posts', {validateStatus: this.validateStatus}),
-                axios.get('https://jsonplaceholder.typicode.com/users', {validateStatus: this.validateStatus})
+                axios.get(this.url.base + this.url.busStop, {validateStatus: this.validateStatus})
             ])
                 .then(axios.spread((responsePosts, responseUsers) => {
                     for (let i = 0; i < responseUsers.data.length; i++) {
