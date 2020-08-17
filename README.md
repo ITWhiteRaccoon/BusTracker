@@ -1,5 +1,5 @@
-# TownSq
-Project for job application at **TownSq**
+# BusTracker
+Project to use **CittaMobi**'s bus tracking api
 
 ## Project setup
 #### Install dependencies
