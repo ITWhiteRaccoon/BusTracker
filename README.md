@@ -2,6 +2,7 @@
 Project for job application at **TownSq**
 
 ## Project setup
+#### Install dependencies
 ```
 npm install
 ```
