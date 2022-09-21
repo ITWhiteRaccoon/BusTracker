@@ -19,7 +19,7 @@
     "typeface-open-sans": "0.0.75",
     "typeface-roboto": "0.0.75",
     "vue": "^2.6.11",
-    "vuetify": "^2.2.11"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.8.3",
